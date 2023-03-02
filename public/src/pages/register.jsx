@@ -1,15 +1,21 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../assests/logo.svg";
 function register() {
+  // const [values, setValues] = useState({
+  //   username: "",
+  //   email: "",
+  //   password: "",
+  //   ConfirmPassword: "",
+  // });
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("form");
   };
 
   const handleChange = (event) => {};
-
+ 
   return (
     <FormContainer>
       <form onSubmit={(event) => handleSubmit(event)}>
@@ -110,7 +116,7 @@ const FormContainer = styled.div`
       color: white;
       text-transform: uppercase;
       a{
-        color: 4e0eff;
+        color: #4e0eff;
         text-decoration: none;
         font-weight: bold;
 
